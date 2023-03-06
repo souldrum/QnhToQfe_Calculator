@@ -120,7 +120,7 @@ p {
     display: flex;
     justify-content: space-between;
     padding: 0.5rem 0.5rem 0.75rem;
-    background-color: #00c3ffd9;
+    background-color: rgba(0, 195, 255, 0.85);
     box-shadow: 0 0 0.3rem #075d86;
     border: 0.3rem solid #075d86;
     border-radius: 0.5rem;
