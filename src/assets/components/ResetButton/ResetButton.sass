@@ -1,0 +1,31 @@
+$Anton: 'Anton', sans-serif
+$Genos: 'Genos', sans-serif
+
+$BtnBlue: #00c3ff
+$BtnHoverBlue: #01b9f1
+$BorderBlue: #075d86
+
+.btn
+    width: 100%
+    height: 1.5rem
+    margin: auto 0
+    padding: 0
+
+    border: none
+    border-radius: .2rem
+
+    color: #fff
+    font: 500 italic 1rem $Genos
+    text-shadow: 0 0 .2rem $BorderBlue
+
+    background: $BtnBlue
+    box-shadow: 0 0 0.25rem $BorderBlue
+    &:hover
+        cursor: pointer
+        background: $BtnHoverBlue
+    &:active
+        transform: scale(.97)
+    @media (max-width: 768px)
+        height: 1.2rem
+    @media (max-width: 600px)
+        margin: .15rem 0
