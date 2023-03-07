@@ -17,14 +17,14 @@ const InputBoxElevation = (props) => {
             <InputItem
                 id={"feet"}
                 label={"feet"}
-                placeholder="3"
+                placeholder="0"
                 onChange={getValueFromFeet}
                 unit={ft}
             />
             <InputItem
                 id={"meters"}
                 label={"meters"}
-                placeholder="1"
+                placeholder="0"
                 onChange={getValueFromMeters}
                 unit={m}
             />

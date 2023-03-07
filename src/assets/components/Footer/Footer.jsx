@@ -19,7 +19,7 @@ const footerAttrs = [
     {
         classAddress: "footer__address vk",
         title: "Manual on github:",
-        href: "https://github.com/souldrum/QnhToQfe_React#readme",
+        href: "https://github.com/souldrum/QnhToQfe_Calculator#readme",
         alt: "github",
         src: "https://img.icons8.com/color/48/000000/github--v1.png",
     },
