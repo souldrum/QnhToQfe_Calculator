@@ -3,11 +3,6 @@ html {
     font-size: 20px;
     font-family: Anton, sans-serif;
 }
-@media (max-width: 350px) {
-    html {
-        font-size: 15px;
-    }
-}
 *,
 *:before,
 *:after {
@@ -156,11 +151,21 @@ p {
         justify-content: flex-end;
     }
 }
+@media (max-width: 375px) {
+    .footer__address {
+        font: 400 0.7rem Roboto, sans-serif;
+    }
+}
 .footer__link {
     display: flex;
 }
 .footer__link-icon {
     width: 1.5rem;
+}
+@media (max-width: 375px) {
+    .footer__link {
+        width: 1.5rem;
+    }
 }
 .vk {
     flex: 50%;
@@ -201,6 +206,11 @@ p {
 @media (max-width: 768px) {
     .header__title {
         font: 1rem/1.5 Anton, sans-serif;
+    }
+}
+@media (max-width: 375px) {
+    .header__title {
+        font: 0.75rem/1.5 Anton, sans-serif;
     }
 }
 .app-container {
