@@ -30,6 +30,15 @@ $PlaceholderColor: #bac0c4
 
         color: $InputTextColor
         font: 500 italic 1.3rem/1.5 $Genos
+
+        /*for delete input[type="number"] arrows*/
+        -webkit-appearance: textfield
+        -moz-appearance: textfield
+        appearance: textfield
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button
+            display: none
+        /*======================================*/
         &:focus
             outline: .15rem solid $InputTextColor
         &::placeholder

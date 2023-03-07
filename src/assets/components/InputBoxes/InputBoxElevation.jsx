@@ -28,7 +28,7 @@ const InputBoxElevation = (props) => {
                 onChange={getValueFromMeters}
                 unit={m}
             />
-            <ResetButton />
+            <ResetButton title={"Reset all"} />
         </section>
     );
 };

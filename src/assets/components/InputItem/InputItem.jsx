@@ -19,6 +19,15 @@ const InputItem = ({ unit, id, label, placeholder, onChange }) => {
             break;
     }
 
+    const onChangeInput = (e) => {
+        //for cut input[type="number"] length
+        if (e.target.value.length > maxLength) {
+            e.target.value = e.target.value.slice(0, maxLength);
+        }
+        //===================================
+        onChange(e.target.value);
+    };
+
     return (
         <div className="input-box__input input">
             <label className="input__label" htmlFor={id}>
@@ -26,12 +35,11 @@ const InputItem = ({ unit, id, label, placeholder, onChange }) => {
             </label>
             <input
                 className="input__field"
-                type="text"
-                maxLength={maxLength}
+                type="number"
                 id={id}
                 name={id}
                 placeholder={placeholder}
-                onChange={(e) => onChange(e.target.value)}
+                onChange={onChangeInput}
                 value={unit > 0 ? unit : ""}
             />
         </div>

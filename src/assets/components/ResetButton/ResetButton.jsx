@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 import * as actions from "../../../redux/actionCreators";
 import "./ResetButton.sass";
 
-const ResetButton = ({ onResetInputs }) => {
+const ResetButton = ({ title, onResetInputs }) => {
     const onReset = (e) => {
         e.preventDefault();
         onResetInputs();
@@ -16,7 +16,7 @@ const ResetButton = ({ onResetInputs }) => {
             type="button"
             onClick={onReset}
         >
-            Reset all
+            {title}
         </button>
     );
 };
