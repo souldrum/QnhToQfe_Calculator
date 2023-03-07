@@ -56,6 +56,13 @@ p {
     box-shadow: 0 0 0.25rem #075d86;
     color: #277ba2;
     font: 500 italic 1.3rem/1.5 Genos, sans-serif;
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+.input__field::-webkit-outer-spin-button,
+.input__field::-webkit-inner-spin-button {
+    display: none;
 }
 .input__field:focus {
     outline: 0.15rem solid #277ba2;
