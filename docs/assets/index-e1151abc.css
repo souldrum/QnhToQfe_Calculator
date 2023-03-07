@@ -120,6 +120,9 @@ p {
         transform: translateY(50%);
         width: 80%;
     }
+    .btn:active {
+        transform: translateY(45%);
+    }
 }
 .calc-container {
     display: flex;
